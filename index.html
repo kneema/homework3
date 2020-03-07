@@ -13,15 +13,16 @@
   <body>
     <!--Button for No Criteria-->
 <div class="container">
-    <form>
+    <form id="form">
       <h1>Password Generator</h1> 
-        <p>Welcome to the password generator. If you do not have any criteria for your password, click submit now. If you have specific criteria use the Criteria selector below.
+        <p>Welcome to the password generator. Indicate the length and criteria for your password using the Criteria selector below.
     
     <br>
     <!--Slider for character length variable between 8 and 128-->
     <div class="container">
       <h5>Select the character length of your password:</h5>
      <select class="custom-select" size="3" id="length">
+        <option value="8">No Preference</option>
         <option value="8">8</option>
         <option value="9">9</option>
         <option value="10">10</option>
@@ -172,8 +173,14 @@
       Special Characters
       </label>
     </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="none">
+      <label class="form-check-label" for="none">
+      No Criteria- Randomize
+      </label>
+    </div>
 <br>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" id="button" class="btn btn-primary">Submit</button>
 
     <div class="container">
       <br>
@@ -191,5 +198,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
   </body>
 </html>

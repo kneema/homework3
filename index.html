@@ -12,10 +12,13 @@
   </head>
   <body>
     <!--Button for No Criteria-->
-<div class="container">
+<div class="container" margin="100px">
     <form id="form">
-      <h1>Password Generator</h1> 
+      <h1><b>Password Generator</b></h1> 
+      <div class="col px-md-5"><div class="p-3 border bg-light">
         <p>Welcome to the password generator. Indicate the length and criteria for your password using the Criteria selector below.
+      </div></div>
+      </div>
     
     <br>
     <!--Slider for character length variable between 8 and 128-->
@@ -147,8 +150,10 @@
     </select>
   </div>
   <br>
+    
     <!--Choices checkboxes for lowercase, uppercase, numeric, and special characters-->
     <div class="container">
+      <h5>Select the criteria for your password:</h5>
     <div class="form-check">
       <input class="form-check-input" type="checkbox" value="" id="lowercase">
       <label class="form-check-label" for="lowercase">
@@ -176,7 +181,7 @@
     <div class="form-check">
       <input class="form-check-input" type="checkbox" value="" id="none">
       <label class="form-check-label" for="none">
-      No Criteria- Randomize
+      No Criteria- Random Assortment
       </label>
     </div>
 <br>
@@ -185,8 +190,11 @@
     <div class="container">
       <br>
       <br>
-      <p> Your password:</p>
-      <h1 id="finalpassword">Password</h1>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Your Password:</label>
+        <textarea class="form-control" id="finalpassword" rows="3">Password</textarea>
+      </div>
+      </div>
     </div>
      </div>
     </div>
